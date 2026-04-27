@@ -5,6 +5,8 @@ This project demonstrates a production-grade, highly available (HA) multi-tier n
 
 The architecture is designed across multiple Availability Zones (AZs) to ensure zero downtime and follows security best practices by isolating compute resources in private subnets.
 
+![Top10News Architecture Diagram](diagram.png)
+
 ## 🏗️ Architecture Design
 - **Networking:** Custom VPC with 2 Public Subnets (for ALB/NAT) and 2 Private Subnets (for App Servers) across 2 AZs.
 - **Security:** Strict Security Group rules. Instances in private subnets only accept traffic from the Application Load Balancer.
